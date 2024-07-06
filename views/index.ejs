@@ -3,7 +3,7 @@
     <title>Mini Message Board</title>
 </head>
 <body>
-    <h1>Board</h1>
+    <h1><%= title %></h1>
     <ul>
         <% messages.forEach(function(message) { %>
           <li>
@@ -12,5 +12,6 @@
           </li>
         <% }) %>
       </ul>
+    <div><a href="/new">Add a message</a></div>
 </body>
 </html>
